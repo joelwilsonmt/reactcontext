@@ -7,7 +7,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1>React Context</h1>
-        <p>Implementation and Uses</p>
+        <h2>Implementation and Uses</h2>
+        <p>Context provides a way to pass data through the component tree without having to pass props down manually at every level.</p>
       </div>
     );
   }
