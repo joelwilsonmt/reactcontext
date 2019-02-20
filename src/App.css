@@ -1,32 +1,31 @@
+body, button, input {
+  background-color: #333;
+  color: #ddd;
+  padding: 5px;
+}
+button, input {
+  border: 1px solid #ddd;
+  transition-duration: .5s;
+}
+input[type="submit"] {
+  margin: 20px 0;
+}
+button:hover, input:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.container {
+  width: 45%;
+  padding: 5% 0;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
 .App {
   text-align: center;
 }
+.wide {
+  width: 25%;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

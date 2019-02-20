@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Home from './Components/Home';
+import NotFound from './Components/NotFound';
 import './App.css';
+import {UserContext} from './Components/Context/UserContext';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>React Context</h1>
-        <h2>Implementation and Uses</h2>
-        <p>Context provides a way to pass data through the component tree without having to pass props down manually at every level.</p>
+        <UserContext.Consumer>{(user) => (
+          user.view === 'Home' ? <Home value={user}/> : <NotFound value={user}/>
+          )}
+        </UserContext.Consumer>
       </div>
     );
   }
