@@ -13,17 +13,16 @@ class Home extends Component {
     return (
       <div>
         <h1>
-          <UserContext.Consumer>{(user) => (
-            user.username ? "Hello " + user.username : "React Context"
-          )}
+          <UserContext.Consumer>
+            {user => user.username ? "Hello " + user.username : "React Context"}
           </UserContext.Consumer>
         </h1>
 
         <h2>Implementation and Uses</h2>
 
-        <UserContext.Consumer>{(user) => (
-          <ChangeUser value={user}/>
-        )}</UserContext.Consumer>
+        <UserContext.Consumer>
+          {user => <ChangeUser value={user}/>}
+        </UserContext.Consumer>
 
         <ShowUser/>
 
